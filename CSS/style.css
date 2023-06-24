@@ -189,7 +189,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/main.jpg);
+    url(../images/main.jpg);
   background-size: cover;
   background-color: #2f303a;
   height: 600px;
@@ -477,6 +477,7 @@ footer {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
+  box-shadow: #212121;
 }
 
 .p-hmini {
