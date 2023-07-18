@@ -302,7 +302,7 @@ body {
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  
+  padding: 40px;
 }
 
 
@@ -318,6 +318,154 @@ body {
   padding: 0;
 }
 
+.close-button:hover, .close-button:focus{
+  fill: #2196F3 ;
+}
+
+.form {
+  display: block;
+}
+
+.title-form{
+  margin-bottom: 12px;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.spec-form{
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+.modal-group{
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  
+}
+
+.modal-form-svg{
+  position: absolute;
+  left: 11px;
+  top: 11px;
+}
+
+.modal-input{
+  width: 100%;
+  height: 40px;
+  border-radius: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+padding-left: 40px;   
+}
+
+.modal-form-svg:hover {
+  border: none;
+  outline: none;
+}
+
+.modal-input:focus + .modal-form-svg,
+.modal-input:hover + .modal-form-svg {
+  fill: #2196f3;
+  
+}
+
+.modal-form-svg:hover {
+  border: none;
+}
+
+.modal-input:focus + .modal-form-svg,
+.modal-input:hover + .modal-form-svg {
+  fill: #2196f3;
+  outline: none;
+}
+
+.modal-input:focus,
+.modal-input:hover {
+  border: 2px solid #2196f3;
+}
+
+.modal-input-comment{
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  padding: 12px 16px;
+}
+.d-modal-button{
+  position: relative;
+}
+
+
+.modal-button{
+  position: absolute;
+  left: 30%;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  padding: 10px 75px;
+  cursor: pointer;
+
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form-container{
+  display: flex;
+}
+
+.visually-hidden{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden;
+}
+
+.modal-form-checkbox-label{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: green;
+  margin-bottom:30px;
+}
+
+.modal-form-checkbox-label::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 15px;
+  border: 1px solid green;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 9px;
+  margin-bottom: 20px;
+}
+
+.modal-form-checkbox:checked + modal-form-checkbox-label::before{
+  background-image: url(../images/checkbox-marked.svg);
+  border-color: #2196F3;
+  background-color: #2196F3;
+}
 
 
 .bigbox-one {
@@ -742,3 +890,67 @@ text-align:left;
   font-weight: 700;
 }
 
+.f-subscribe{
+  padding-top: 72px;
+  margin-left: 93px;
+}
+
+.p-subscribe{
+  color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.button-subscribe{
+  padding: 7px 28px 7px 39px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+.div-subscribe{
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.email-f-form{
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+
+  width: 335px;
+  height: 50px;
+  padding-left: 16px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.svg-subscribe{
+  
+}
