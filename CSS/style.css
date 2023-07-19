@@ -376,22 +376,24 @@ padding-left: 40px;
 .modal-input:focus + .modal-form-svg,
 .modal-input:hover + .modal-form-svg {
   fill: #2196f3;
-  
+  outline: none;
 }
 
-.modal-form-svg:hover {
+.modal-form-svg:hover, .modal-form-svg:focus{
   border: none;
+  outline: none;
 }
 
 .modal-input:focus + .modal-form-svg,
 .modal-input:hover + .modal-form-svg {
   fill: #2196f3;
-  outline: none;
+
 }
 
 .modal-input:focus,
 .modal-input:hover {
   border: 2px solid #2196f3;
+  outline: none;
 }
 
 .modal-input-comment{
@@ -402,7 +404,7 @@ padding-left: 40px;
 }
 .d-modal-button{
   position: relative;
-  
+
 }
 
 
