@@ -578,19 +578,19 @@ padding-left: 40px;
   padding-bottom: 50px;
 }
 
-.social-media {
+.team__social-media {
   display: flex;
   justify-content: space-between;
   margin: 16px 32px 30px 32px;
   padding: 0;
 }
 
-.isocial {
+.team__svg {
   width: 20px;
   height: 20px;
   border-width: 44px;
 }
-.lsocial {
+.team__icons {
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -598,11 +598,11 @@ padding-left: 40px;
   height: 44px;
   border-radius: 50%;
 }
-.lsocial:hover{
+.team__icons:hover{
   background-color: #2196F3;
   cursor: pointer;
 }
-.lsocial:hover .isocial{
+.team__icons:hover .team__svg{
   fill: #ffffff;
   cursor: pointer;
 }
@@ -629,7 +629,7 @@ padding-left: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.div-poster {
+.portafolio__description {
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0;
@@ -648,28 +648,28 @@ padding-left: 40px;
   margin-top: 10px;
 }
 
-.ul-cr {
+.last__ul {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
   margin-top: 44px;
 }
 
-.li-cr {
+.last__li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.li-cr:hover {
+.last__li:hover {
   border-color: #2196F3;
 }
 
-.li-cr:hover .img-cr{
+.last__li:hover .last__img{
   fill: #2196F3;
   cursor: pointer;
 }
 
-.img-cr {
+.last__img {
   width: 170px;
   height: 81px;
   padding: 14px 32px;
@@ -679,14 +679,14 @@ footer {
   background-color: #2f303a;
   height: 252px;
 }
-.foot {
+.footer__foot {
   padding-top: 60px;
 }
-.logob {
+.footer__logo {
   padding-bottom: 9px;
 }
 
-.address {
+.footer__address {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -696,11 +696,11 @@ footer {
   padding-top: 9px;
 }
 
-.contacts-two {
+.footer__contacts{
   padding: 0;
   margin: 0;
 }
-.contacts-ba {
+.footer_e-t {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -708,14 +708,14 @@ footer {
   color: #757575;
 }
 
-.contacts-two .contacts-ba:hover,
-.contacts-two .contacts-ba:focus {
+.footer__contacts .footer_e-t:hover,
+.footer__contacts .footer_e-t:focus {
   color: #2196f3;
   cursor: pointer;
 }
 
 /*portfolio style*/
-.p-button {
+.portafolio__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -726,15 +726,15 @@ footer {
   padding: 6px 24px;
 }
 
-.p-button:hover,
-.p-button:focus {
+.portafolio__button:hover,
+.portafolio__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.p-hmini {
+.portafolio__hmini {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -743,7 +743,7 @@ footer {
   margin: 0 auto 4px 24px;
   padding: 0;
 }
-.p-pmini {
+.portafolio__pmini {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -770,20 +770,19 @@ footer {
   padding-bottom: 151px;
 }
 
-.p-main {
+.portafolio {
   padding-bottom: 82px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pl-button {
+.portafolio__buttons {
   display: flex;
   gap: 8px;
   margin-top: 106px;
   margin-bottom: 50px;
   justify-content: center;
-}
-.p-button {
+  
   padding: 6px 24px 6px 24px;
   font-family: "Roboto";
   font-style: normal;
@@ -791,19 +790,20 @@ footer {
   font-size: 16px;
   line-height: 26px;
 }
-.ul-main {
+
+.portafolio__posters {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   gap: 30px;
 }
-.li-main:hover {
+.portafolio__services:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
-.li-main {
+.portafolio__services {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -812,12 +812,12 @@ footer {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.img-animation{
+.portafolio__img{
   position: relative;
   overflow: hidden;
 }
 
-.h-animation{
+.portafolio__hidden{
   position: absolute;
   top: 0px;
   width: 370px  ;
@@ -828,14 +828,14 @@ footer {
   transform: translateY(100%);
 }
 
-.main-animation:hover .h-animation{
+.portafolio__animation:hover .portafolio__hidden{
   transform: translateY(0%);
   transition: transform 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
   
 }
 
-.p-animation{
+.portafolio__parragraph{
   color: #FFF;
 font-size: 18px;
 font-family: Roboto;
@@ -851,29 +851,29 @@ text-align:left;
 }
 
 
-.footerp {
+.footer__info {
     display: flex;
     
 }
 
-.encuentranos {
+.footer__encuentranos {
   margin-top: 72px;
   margin-left: 70px;
 }
-.smbottom{
+.footer__socialmedia{
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin-top: 20px;
 }
 
-.socialf {
+.footer__smsvg {
   width: 20px;
   height: 20px;
   border-width: 44px;
   fill: #FFFFFF;
 }
-.lisocialf{
+.footer__smli{
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -885,24 +885,24 @@ text-align:left;
   margin-left: 0;
 }
 
-.lisocialf:hover{
+.footer__smli:hover{
   background-color: #2196F3;
   cursor: pointer;
 }
 
-.t-en{
+.footer__t-encuentranos{
   color: #FFFFFF;
   font-size: 14px;
   font-family: Roboto;
   font-weight: 700;
 }
 
-.f-subscribe{
+.footer__subscribe{
   padding-top: 72px;
   margin-left: 93px;
 }
 
-.p-subscribe{
+.footer__t-subscribe{
   color: #FFF;
 font-family: Roboto;
 font-size: 14px;
@@ -912,7 +912,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
-.button-subscribe{
+.footer__button{
   padding: 7px 28px 7px 39px;
   cursor: pointer;
   display: flex;
@@ -932,13 +932,13 @@ text-transform: uppercase;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
 }
-.div-subscribe{
+.footer__form{
   display: flex;
   gap: 12px;
   margin-top: 20px;
 }
 
-.email-f-form{
+.footer__input{
   color: rgba(255, 255, 255, 0.60);
   font-family: Roboto;
   font-size: 16px;
@@ -958,6 +958,7 @@ text-transform: uppercase;
 }
 
 
-.svg-subscribe{
-  
+.footer__bsvg{
+  width: 24px;
+  height: 24px;
 }
