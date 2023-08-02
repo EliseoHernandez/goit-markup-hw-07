@@ -1,0 +1,41 @@
+
+.values__img {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .values__icon {
+    padding: 20px 100px;
+    background-color: #f5f4fa;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .values__svg {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .values__page {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+  }
+  .values__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    gap: 10px;
+  }
+  .values__li {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .values__parragraph {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
