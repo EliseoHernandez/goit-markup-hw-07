@@ -17,3 +17,41 @@ p,
 ul {
   margin: 0;
 }
+
+body {
+    font-family: "$mainfont", "raleway", "sans-serif";
+    background-color: #ffffff;
+  }
+  
+  p {
+    color: $mainfill;
+  }
+  
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  ul li a {
+    color: #212121;
+  }

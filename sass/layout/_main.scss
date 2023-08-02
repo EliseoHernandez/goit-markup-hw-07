@@ -21,7 +21,7 @@
   }
   
   .main__title {
-    font-family: "roboto";
+    font-family: $mainfont;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -35,7 +35,7 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #ffffff;
-    background-color: #2196f3;
+    background-color: $maincolor;
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;

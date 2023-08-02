@@ -11,11 +11,11 @@
   }
   
   .last__li:hover {
-    border-color: #2196F3;
+    border-color: $maincolor;
   }
   
   .last__li:hover .last__img{
-    fill: #2196F3;
+    fill: $maincolor;
     cursor: pointer;
   }
   

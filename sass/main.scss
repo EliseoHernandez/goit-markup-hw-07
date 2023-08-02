@@ -1,10 +1,16 @@
 @import './utils/_text.scss';
-
 @import './utils/_variables.scss';
 
+@import './base/_container.scss';
 @import './base/_commons.scss';
 
 @import './components/_modal.scss';
+@import './components/_logo.scss';
+@import './components/_buttons.scss';
+@import './components/_form.scss';
+@import './components/_social.scss';
+@import './components/_subscription.scss';
+
 
 @import './layout/_header.scss';
 @import './layout/_footer.scss';
@@ -15,81 +21,9 @@
 @import './layout/_team.scss';
 @import './layout/_values.scss';
 
-
-
-
-  
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  a:link,
-  a:visited {
-    text-decoration: none;
-  }
-  ul li a {
-    color: #212121;
-  }
-  
-  /*for all pharagraph*/
-  p {
-    color: #757575;
-  }
-  
-  h2 {
-    font-weight: 700;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  
-  h3 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-  }
-  /*for logo*/
  
   
-  
-  
-  
-  body {
-    font-family: "roboto", "raleway", "sans-serif";
-    background-color: #ffffff;
-  }
-  
-  
-
-  
-  
-  
-  
-  
  
-  
-  
-  
-  
-  
-  /*portfolio style*/
- 
-  
-  .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   
   
   

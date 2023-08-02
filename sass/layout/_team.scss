@@ -26,7 +26,7 @@
     border-radius: 50%;
   }
   .team__icons:hover{
-    background-color: #2196F3;
+    background-color: $maincolor;
     cursor: pointer;
   }
   .team__icons:hover .team__svg{
@@ -55,4 +55,18 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  .team__profession {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
   }
