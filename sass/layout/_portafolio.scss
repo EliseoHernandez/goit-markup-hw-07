@@ -1,4 +1,9 @@
-.portafolio__button {
+.portafolio {
+    padding-bottom: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  &__button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -7,47 +12,15 @@
     border-radius: 4px;
     background-color: #f5f4fa;
     padding: 6px 24px;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: $maincolor;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
   }
-  
-  .portafolio__button:hover,
-  .portafolio__button:focus {
-    color: #ffffff;
-    background-color: $maincolor;
-    cursor: pointer;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-  }
-  
-  .portafolio__hmini {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-    margin: 0 auto 4px 24px;
-    padding: 0;
-  }
-  .portafolio__pmini {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
-    text-align: justify;
-    margin-left: 24px;
-  }
-
-  .last {
-    padding-top: 59px;
-    padding-bottom: 151px;
-  }
-  
-  .portafolio {
-    padding-bottom: 82px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .portafolio__buttons {
+  &__buttons {
     display: flex;
     gap: 8px;
     margin-top: 106px;
@@ -61,31 +34,50 @@
     font-size: 16px;
     line-height: 26px;
   }
-  
-  .portafolio__posters {
+    &__posters {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
     gap: 30px;
   }
-  .portafolio__services:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-      cursor: pointer;
-  }
-  .portafolio__services {
+    &__services {
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     margin-top: 0;
     padding: 0;
     flex-basis: calc((100% - 60px) / 3);
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+          cursor: pointer;
+      }
   }
-  
-  .portafolio__img{
-    position: relative;
-    overflow: hidden;
+    &__img{
+        position: relative;
+        overflow: hidden;
+      }
+      &__hmini {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: #212121;
+        margin: 0 auto 4px 24px;
+        padding: 0;
+      }
+}
+
+  .portafolio
+  .portafolio__pmini {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: justify;
+    margin-left: 24px;
   }
   
   .portafolio__hidden{

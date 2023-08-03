@@ -19,6 +19,10 @@
   text-decoration: none;
 }
 
+button {
+  font-family: "roboto";
+}
+
 h1,
 h2,
 h3,
@@ -88,7 +92,6 @@ ul li a {
   opacity: 100%;
   pointer-events: auto;
 }
-
 .backdrop__modal {
   z-index: 1;
   position: relative;
@@ -102,7 +105,6 @@ ul li a {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding: 40px;
 }
-
 .backdrop__close-button {
   position: absolute;
   top: 8px;
@@ -114,16 +116,13 @@ ul li a {
   margin: 0;
   padding: 0;
 }
-
-.backdrop__close-button:hover, .backdrop__close-button:focus {
+.backdrop__close-button__close-button:hover, .backdrop__close-button .backdrop__close-button:focus {
   fill: #2196F3;
 }
-
 .backdrop__form {
   display: block;
 }
-
-.backdrop__title {
+.backdrop____title {
   margin-bottom: 12px;
   color: #212121;
   text-align: center;
@@ -134,7 +133,6 @@ ul li a {
   line-height: normal;
   letter-spacing: 0.6px;
 }
-
 .backdrop__spec-form {
   color: #757575;
   font-family: "roboto";
@@ -144,19 +142,16 @@ ul li a {
   line-height: normal;
   letter-spacing: 0.12px;
 }
-
 .backdrop__group {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
-
 .backdrop__svg {
   position: absolute;
   left: 11px;
   top: 11px;
 }
-
 .backdrop__input {
   width: 100%;
   height: 40px;
@@ -164,45 +159,30 @@ ul li a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 40px;
 }
-
 .backdrop__svg:hover {
   border: none;
   outline: none;
 }
-
-.backdrop__input:focus + .backdrop__svg,
-.backdrop__input:hover + .backdrop__svg {
+.backdrop__input:focus + .backdrop__svg, .backdropinput:hover + .backdrop__svg {
   fill: #2196F3;
   outline: none;
 }
-
 .backdrop__svg:hover, .backdrop__svg:focus {
   border: none;
   outline: none;
 }
-
-.backdrop__input:focus + .backdrop__svg,
-.backdrop__input:hover + .backdrop__svg {
+.backdrop__input:focus + .backdrop__svg, .backdrop__input:hover + .backdrop__svg {
   fill: #2196F3;
 }
-
-.backdrop__input:focus,
-.backdrop__input:hover {
-  border: 2px solid #2196F3;
-  outline: none;
-}
-
 .backdrop__input-comment {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
 }
-
 .backdrop__button {
   position: relative;
 }
-
 .backdrop__submit {
   position: absolute;
   left: 30%;
@@ -221,7 +201,6 @@ ul li a {
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
 .backdrop__policy {
   margin-top: 20px;
   display: flex;
@@ -284,6 +263,10 @@ ul li a {
   margin-right: 93px;
 }
 
+.portafolio__button {
+  font-family: "roboto";
+}
+
 .header__link.active {
   color: #2196F3;
 }
@@ -323,14 +306,6 @@ header {
   gap: 50px;
   padding-left: 0;
 }
-.header__nav-list__click {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transform: translateY(0%);
-}
 
 .header__click {
   padding-top: 32px;
@@ -356,11 +331,6 @@ header {
   transform: scaleY(3);
 }
 
-.header__contact-link {
-  display: flex;
-  flex-direction: row;
-}
-
 .header__icon-mail {
   width: 16px;
   height: 12px;
@@ -369,15 +339,6 @@ header {
 .header__icon-tel {
   width: 10px;
   height: 16px;
-}
-
-.header__contacts {
-  display: flex;
-  margin-left: 306px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0;
-  gap: 30px;
 }
 
 .header__nav-list {
@@ -391,6 +352,19 @@ header {
 
 .header__nav-list .list:focus {
   color: #2196F3;
+}
+
+.header__contacts {
+  display: flex;
+  margin-left: 306px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  gap: 30px;
+}
+.header__contacts__contact-link {
+  display: flex;
+  flex-direction: row;
 }
 
 .header__contact-link:hover .header__icon-mail, .header__contact-link:hover .header__icon-tel {
@@ -432,7 +406,7 @@ header {
   gap: 10px;
 }
 
-.header__contacts .header__contacts-ab {
+.header__contacts-ab {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -441,20 +415,17 @@ header {
   font-family: "roboto";
 }
 
-footer {
+.footer {
   background-color: #2f303a;
   height: 252px;
 }
-
-.footer__foot {
+.footer__info {
+  display: flex;
+}
+.footer__info .footer__foot {
   padding-top: 60px;
 }
-
-.footer__logo {
-  padding-bottom: 9px;
-}
-
-.footer__address {
+.footer__info .footer__address {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -463,28 +434,20 @@ footer {
   letter-spacing: 0.03em;
   padding-top: 9px;
 }
-
-.footer__contacts {
+.footer__info .footer__contacts {
   padding: 0;
   margin: 0;
 }
-
-.footer_e-t {
+.footer__e-t {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
 }
-
-.footer__contacts .footer_e-t:hover,
-.footer__contacts .footer_e-t:focus {
+.footer__e-t:hover {
   color: #2196F3;
-  cursor: pointer;
-}
-
-.footer__info {
-  display: flex;
 }
 
 .footer__encuentranos {
@@ -503,7 +466,7 @@ footer {
   width: 20px;
   height: 20px;
   border-width: 44px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer__smli {
@@ -517,14 +480,13 @@ footer {
   margin-right: 10px;
   margin-left: 0;
 }
-
 .footer__smli:hover {
   background-color: #2196F3;
   cursor: pointer;
 }
 
 .footer__t-encuentranos {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   font-family: "roboto";
   font-weight: 700;
@@ -536,7 +498,7 @@ footer {
 }
 
 .footer__t-subscribe {
-  color: #FFF;
+  color: #fff;
   font-family: "roboto";
   font-size: 14px;
   font-style: normal;
@@ -556,7 +518,7 @@ footer {
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "roboto";
   font-size: 16px;
@@ -594,27 +556,27 @@ footer {
   height: 24px;
 }
 
+.last {
+  padding-top: 59px;
+  padding-bottom: 151px;
+}
 .last__ul {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
   margin-top: 44px;
 }
-
 .last__li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
 .last__li:hover {
   border-color: #2196F3;
 }
-
 .last__li:hover .last__img {
   fill: #2196F3;
   cursor: pointer;
 }
-
 .last__img {
   width: 170px;
   height: 81px;
@@ -631,14 +593,12 @@ footer {
   align-items: center;
   margin: 0;
 }
-
 .main__index {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 .main__title {
   font-family: "roboto";
   font-weight: 900;
@@ -648,7 +608,6 @@ footer {
   color: #ffffff;
   text-align: center;
 }
-
 .main__button {
   font-weight: 700;
   font-size: 16px;
@@ -661,6 +620,12 @@ footer {
   padding: 10px 32px;
 }
 
+.portafolio {
+  padding-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .portafolio__button {
   font-weight: 500;
   font-size: 16px;
@@ -671,47 +636,12 @@ footer {
   background-color: #f5f4fa;
   padding: 6px 24px;
 }
-
-.portafolio__button:hover,
-.portafolio__button:focus {
+.portafolio__button:hover, .portafolio__button:focus {
   color: #ffffff;
   background-color: #2196F3;
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-.portafolio__hmini {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-  margin: 0 auto 4px 24px;
-  padding: 0;
-}
-
-.portafolio__pmini {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-  text-align: justify;
-  margin-left: 24px;
-}
-
-.last {
-  padding-top: 59px;
-  padding-bottom: 151px;
-}
-
-.portafolio {
-  padding-bottom: 82px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .portafolio__buttons {
   display: flex;
   gap: 8px;
@@ -725,7 +655,6 @@ footer {
   font-size: 16px;
   line-height: 26px;
 }
-
 .portafolio__posters {
   display: flex;
   flex-wrap: wrap;
@@ -733,12 +662,6 @@ footer {
   margin: 0;
   gap: 30px;
 }
-
-.portafolio__services:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-
 .portafolio__services {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -747,10 +670,32 @@ footer {
   padding: 0;
   flex-basis: calc((100% - 60px) / 3);
 }
-
+.portafolio__services:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
 .portafolio__img {
   position: relative;
   overflow: hidden;
+}
+.portafolio__hmini {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin: 0 auto 4px 24px;
+  padding: 0;
+}
+
+.portafolio .portafolio__pmini {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: justify;
+  margin-left: 24px;
 }
 
 .portafolio__hidden {
@@ -784,38 +729,32 @@ footer {
   margin: 0;
 }
 
-.service__title {
-  margin-top: 0;
-  margin-bottom: 55px;
-}
-
 .service {
   justify-content: center;
   padding-bottom: 94px;
 }
-
+.service__title {
+  margin-top: 0;
+  margin-bottom: 55px;
+}
 .service__ul {
   margin: 0;
   display: flex;
   padding: 0;
   gap: 26px;
 }
-
-.service_img {
+.service__img {
   flex-basis: calc((100% - 52px) / 3);
 }
-
 .service__li {
   position: relative;
   z-index: -1;
 }
-
-.tec img {
+.service .tec img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .service__box {
   position: absolute;
   bottom: 0;
@@ -827,10 +766,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .service__box p {
   position: absolute;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-family: "roboto";
@@ -843,24 +781,20 @@ footer {
 .team {
   background-color: #f5f4fa;
 }
-
 .team__mates {
   padding-bottom: 50px;
 }
-
 .team__social-media {
   display: flex;
   justify-content: space-between;
   margin: 16px 32px 30px 32px;
   padding: 0;
 }
-
 .team__svg {
   width: 20px;
   height: 20px;
   border-width: 44px;
 }
-
 .team__icons {
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
@@ -869,10 +803,39 @@ footer {
   height: 44px;
   border-radius: 50%;
 }
-
 .team__icons:hover {
   background-color: #2196F3;
   cursor: pointer;
+}
+.team__presentation {
+  display: flex;
+  gap: 32px;
+  padding: 0;
+}
+.team__card {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 97px) / 4);
+  border: 1px solid #eeeeee;
+}
+.team__profile {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team__profession {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .team__icons:hover .team__svg {
@@ -884,41 +847,6 @@ footer {
   fill: #AFB1B8;
 }
 
-.team__presentation {
-  display: flex;
-  gap: 32px;
-  padding: 0;
-}
-
-.team__card {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 97px) / 4);
-  border: 1px solid #eeeeee;
-}
-
-.team__profile {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.team__profession {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
-}
-
 .values__img {
   display: flex;
   gap: 30px;
@@ -926,24 +854,20 @@ footer {
   margin-left: 0;
   padding-left: 0;
 }
-
 .values__icon {
   padding: 20px 100px;
   background-color: #f5f4fa;
   flex-basis: calc((100% - 90px) / 4);
 }
-
 .values__svg {
   width: 70px;
   height: 70px;
 }
-
 .values__page {
   display: flex;
   padding: 0;
   gap: 30px;
 }
-
 .values__title {
   font-size: 14px;
   font-weight: 700;
@@ -951,11 +875,9 @@ footer {
   letter-spacing: 0.03em;
   gap: 10px;
 }
-
 .values__li {
   flex-basis: calc((100% - 90px) / 4);
 }
-
 .values__parragraph {
   margin-top: 10px;
   font-weight: 400;

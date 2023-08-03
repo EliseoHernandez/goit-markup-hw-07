@@ -34,13 +34,6 @@
     display: flex;
     gap: 50px;
     padding-left: 0;
-    &__click{
-        padding-top: 32px;
-        padding-bottom: 32px;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        transform: translateY(0%);}
   }
   
   .header__click{
@@ -68,10 +61,6 @@
   }
   
   
-  .header__contact-link {
-    display: flex;
-    flex-direction: row;
-  }
   
   .header__icon-mail {
     width: 16px;
@@ -83,14 +72,7 @@
     height: 16px;
   }
   
-  .header__contacts {
-    display: flex;
-    margin-left: 306px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 0;
-    gap: 30px;
-  }
+  
   
   .header__nav-list {
     font-family: $mainfont;
@@ -108,8 +90,20 @@
     
   }
 
-  
-  
+  .header__contacts {
+    display: flex;
+    margin-left: 306px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0;
+    gap: 30px;
+    &__contact-link{
+        display: flex;
+        flex-direction: row;
+    }
+
+  }
+
   .header__contact-link:hover .header__icon-mail, .header__contact-link:hover .header__icon-tel{
     fill: $maincolor;
     cursor: pointer;
@@ -136,6 +130,8 @@
     font-family: $mainfont;
     cursor: pointer;
   }
+  
+  
   .header__contactl {
     font-weight: 500;
     font-size: 14px;
@@ -148,7 +144,7 @@
     gap: 10px;
   }
 
-  .header__contacts .header__contacts-ab {
+  .header__contacts-ab {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

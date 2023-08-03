@@ -1,54 +1,56 @@
 
-.service__title {
+.service {
+  justify-content: center;
+  padding-bottom: 94px;
+
+  &__title {
     margin-top: 0;
     margin-bottom: 55px;
   }
-  
-  .service {
-    justify-content: center;
-    padding-bottom: 94px;
-  }
-  .service__ul {
+
+  &__ul {
     margin: 0;
     display: flex;
     padding: 0;
     gap: 26px;
   }
-  .service_img {
+
+  &__img {
     flex-basis: calc((100% - 52px) / 3);
   }
-  
-  .service__li{
+
+  &__li {
     position: relative;
     z-index: -1;
   }
-  .tec img{
+
+  .tec img {
     display: block;
     width: 100%;
     height: auto;
   }
-  .service__box {
+
+  &__box {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color:rgba(47, 48, 58, 0.80);
+    background-color: rgba(47, 48, 58, 0.80);
     height: 70px;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p {
+      position: absolute;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-family: $mainfont;
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      z-index: 2;
+    }
   }
-  
-  
-  .service__box p {
-    position: absolute;
-    color: #FFF;
-    text-align: center;
-    font-size: 14px;
-    font-family: $mainfont;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-  
+}

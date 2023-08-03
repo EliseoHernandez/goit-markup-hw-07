@@ -327,12 +327,12 @@
           <div>
             <ul class="footer__contacts">
               <li>
-                <a class="footer_e-t" href="mailto:info@example.com"
+                <a class="footer__e-t" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="footer_e-t" href="tel:+525555296000"
+                <a class="footer__e-t" href="tel:+525555296000"
                   >+52 55 5529 6000</a
                 >
               </li>
@@ -368,14 +368,10 @@
           <form action="" class="footer__subscribe">
             <p class="footer__t-subscribe">Suscríbase al boletín informativo</p>
             <div class="footer__form">
-              <input
-                class="footer__input"
-                placeholder="Correo electrónico"
-                type="email"
-              />
-
-              <button class="footer__button">
-                Suscríbase
+              
+                <input class="footer__input" placeholder="Correo electrónico" type="email">
+             
+              <button class="footer__button">Suscríbase
                 <span>
                   <svg class="footer__bsvg">
                     <use href="./images/icons.svg#icon-subscribe"></use>
@@ -383,9 +379,11 @@
                 </span>
               </button>
             </div>
+            
           </form>
         </div>
       </div>
+    
     </footer>
     <script src="./js/modal.js"></script>
   </body>
