@@ -1,4 +1,4 @@
-.header__link.active {
+.nav__link.active {
     color: $maincolor;
   }
   .active::after {
@@ -11,7 +11,7 @@
     bottom: 0px;
     left: 0;
   }
-  .header__link:hover{
+  .nav__link:hover{
     color: $maincolor;
     cursor: pointer;
   }
@@ -30,27 +30,27 @@
   .header__top {
     display: flex;
   }
-  .header__nav-list {
+  .nav {
     display: flex;
     gap: 50px;
     padding-left: 0;
   }
   
-  .header__click{
+  .nav__click{
     padding-top: 32px;
     padding-bottom: 32px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transform: translateY(0%);
-    &.header__click:hover .header__nav-animation{
+    &.nav__click:hover .nav__animation{
         background-color: $maincolor;
         transform: translateY(0%);
         transition: transform 2s;   
       }       
   }
   
-  .header__nav-animation{
+  .nav__animation{
     align-items: center;
     bottom: 1px;
     position: absolute;
@@ -62,19 +62,19 @@
   
   
   
-  .header__icon-mail {
+  .contacts__icon-mail {
     width: 16px;
     height: 12px;
   }
   
-  .header__icon-tel {
+  .contacts__icon-tel {
     width: 10px;
     height: 16px;
   }
   
   
   
-  .header__nav-list {
+  .nav {
     font-family: $mainfont;
     font-size: 14px;
     line-height: 1.14;
@@ -85,12 +85,12 @@
   }
   
   
-  .header__nav-list .list:focus {
+  .nav .list:focus {
     color: $maincolor;
     
   }
 
-  .header__contacts {
+  .contacts {
     display: flex;
     margin-left: 306px;
     padding-top: 32px;
@@ -104,35 +104,35 @@
 
   }
 
-  .header__contact-link:hover .header__icon-mail, .header__contact-link:hover .header__icon-tel{
+  .contacts__link:hover .contacts__icon-mail, .contacts__link:hover .contacts__icon-tel{
     fill: $maincolor;
     cursor: pointer;
   }
-  .header__contact-link:focus .header__icon-mail, .header__contact-link:focus .header__icon-tel{
+  .contacts__link:focus .contacts__icon-mail, .contacts__link:focus .contacts__icon-tel{
     fill: $maincolor;
     cursor: pointer;
   }
   
-  .header__contact-link:focus {
+  .contacts__link:focus {
     fill: $maincolor;
   } 
 
-  .header__contact-link:hover .header__icon-mail,
-  .header__contact-link:hover .header__email{
+  .contacts__link:hover .contacts__icon-mail,
+  .contacts__link:hover .contacts__email{
     font-family: $mainfont;
     color: $maincolor;
     cursor: pointer;
   }
   
-  .header__contact-link:hover .header__icon-tel,
-  .header__contact-link:hover .header__tel{
+  .contacts__link:hover .contacts__icon-tel,
+  .contacts__link:hover .contacts__tel{
     color: $maincolor;
     font-family: $mainfont;
     cursor: pointer;
   }
   
   
-  .header__contactl {
+  .contacts__anchor {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -144,7 +144,7 @@
     gap: 10px;
   }
 
-  .header__contacts-ab {
+  .contacts__top {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

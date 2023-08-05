@@ -267,7 +267,7 @@ ul li a {
   font-family: "roboto";
 }
 
-.header__link.active {
+.nav__link.active {
   color: #2196F3;
 }
 
@@ -282,7 +282,7 @@ ul li a {
   left: 0;
 }
 
-.header__link:hover {
+.nav__link:hover {
   color: #2196F3;
   cursor: pointer;
 }
@@ -301,13 +301,13 @@ header {
   display: flex;
 }
 
-.header__nav-list {
+.nav {
   display: flex;
   gap: 50px;
   padding-left: 0;
 }
 
-.header__click {
+.nav__click {
   padding-top: 32px;
   padding-bottom: 32px;
   cursor: pointer;
@@ -315,13 +315,13 @@ header {
   overflow: hidden;
   transform: translateY(0%);
 }
-.header__click.header__click:hover .header__nav-animation {
+.nav__click.nav__click:hover .nav__animation {
   background-color: #2196F3;
   transform: translateY(0%);
   transition: transform 2s;
 }
 
-.header__nav-animation {
+.nav__animation {
   align-items: center;
   bottom: 1px;
   position: absolute;
@@ -331,17 +331,17 @@ header {
   transform: scaleY(3);
 }
 
-.header__icon-mail {
+.contacts__icon-mail {
   width: 16px;
   height: 12px;
 }
 
-.header__icon-tel {
+.contacts__icon-tel {
   width: 10px;
   height: 16px;
 }
 
-.header__nav-list {
+.nav {
   font-family: "roboto";
   font-size: 14px;
   line-height: 1.14;
@@ -350,11 +350,11 @@ header {
   color: #212121;
 }
 
-.header__nav-list .list:focus {
+.nav .list:focus {
   color: #2196F3;
 }
 
-.header__contacts {
+.contacts {
   display: flex;
   margin-left: 306px;
   padding-top: 32px;
@@ -362,40 +362,40 @@ header {
   padding-left: 0;
   gap: 30px;
 }
-.header__contacts__contact-link {
+.contacts__contact-link {
   display: flex;
   flex-direction: row;
 }
 
-.header__contact-link:hover .header__icon-mail, .header__contact-link:hover .header__icon-tel {
+.contacts__link:hover .contacts__icon-mail, .contacts__link:hover .contacts__icon-tel {
   fill: #2196F3;
   cursor: pointer;
 }
 
-.header__contact-link:focus .header__icon-mail, .header__contact-link:focus .header__icon-tel {
+.contacts__link:focus .contacts__icon-mail, .contacts__link:focus .contacts__icon-tel {
   fill: #2196F3;
   cursor: pointer;
 }
 
-.header__contact-link:focus {
+.contacts__link:focus {
   fill: #2196F3;
 }
 
-.header__contact-link:hover .header__icon-mail,
-.header__contact-link:hover .header__email {
+.contacts__link:hover .contacts__icon-mail,
+.contacts__link:hover .contacts__email {
   font-family: "roboto";
   color: #2196F3;
   cursor: pointer;
 }
 
-.header__contact-link:hover .header__icon-tel,
-.header__contact-link:hover .header__tel {
+.contacts__link:hover .contacts__icon-tel,
+.contacts__link:hover .contacts__tel {
   color: #2196F3;
   font-family: "roboto";
   cursor: pointer;
 }
 
-.header__contactl {
+.contacts__anchor {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -406,7 +406,7 @@ header {
   gap: 10px;
 }
 
-.header__contacts-ab {
+.contacts__top {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -688,7 +688,7 @@ header {
   padding: 0;
 }
 
-.portafolio .portafolio__pmini {
+.portafolio__pmini {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;

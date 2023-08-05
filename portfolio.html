@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header>
@@ -26,46 +26,37 @@
         <nav class="header__top">
           <a class="header__logo" href="index.html">WebStudio</a>
           <div>
-            <ul class="header__nav-list">
-              <li class="header__click">
-                <a class="header__link" href="./index.html">Estudio</a>
-                <div class="header__nav-animation"></div>
+            <ul class="nav">
+              <li class="nav__click">
+                <a class="nav__link active" href="./index.html">Estudio</a>
+                <div class="nav__animation"></div>
               </li>
-              <li class="header__click">
-                <a class="header__link active" href="portfolio.html"
-                  >Portafolio</a
-                >
-                <div class="header__nav-animation"></div>
+              <li class="nav__click">
+                <a class="nav__link" href="portfolio.html">Portafolio</a>
+                <div class="nav__animation"></div>
               </li>
-              <li class="header__click">
-                <a class="header__link" href="#">Contactos</a>
-                <div class="header__nav-animation"></div>
+              <li class="nav__click">
+                <a class="nav__link" href="#">Contactos</a>
+                <div class="nav__animation"></div>
               </li>
             </ul>
           </div>
         </nav>
-        <ul class="header__contacts">
-          <li class="header__contact-link">
-            <a
-              class="header__contactl header__contacts-ab"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="header__icon-mail">
+        <ul class="contacts">
+          <li class="contacts__link">
+            <a class="contacts__anchor contacts__top" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon-mail">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
-              <span class="header__email">info@devstudio.com</span>
+              <span class="contacts__email">info@devstudio.com</span>
             </a>
           </li>
-          <li class="header__contact-link">
-            <a
-              class="header__contactl header__contacts-ab"
-              href="tel:+525555296000"
-            >
-              <svg class="header__icon-tel">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              <span class="header__tel">+52 55 5529 6000</span>
-            </a>
+          <li class="contacts__link">
+            <a class="contacts__anchor contacts__top" href="tel:+525555296000">
+              <svg class="contacts__icon-tel">
+                <use href="./images/icons.svg#icon-tel"></use></svg>
+                <span class="contacts__tel" >+52 55 5529 6000</span>
+              </a>
           </li>
         </ul>
       </div>
