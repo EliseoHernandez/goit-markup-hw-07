@@ -1,0 +1,26 @@
+.regular {
+  padding-top: 59px;
+  padding-bottom: 151px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 44px;
+  &__li {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  &__li:hover {
+    border-color: #2196F3;
+  }
+  &__li:hover &__img {
+    fill: #2196F3;
+    cursor: pointer;
+  }
+  &__img {
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
+  }
+}

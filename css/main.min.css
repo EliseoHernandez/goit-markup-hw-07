@@ -417,13 +417,13 @@ header {
   background-color: #2f303a;
   height: 252px;
 }
-.footer__info {
+.footer .footer__info {
   display: flex;
 }
-.footer__info .footer__foot {
+.footer .footer__info .footer__foot {
   padding-top: 60px;
 }
-.footer__info .footer__address {
+.footer .footer__info .footer__address {
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -432,11 +432,12 @@ header {
   letter-spacing: 0.03em;
   padding-top: 9px;
 }
-.footer__info .footer__contacts {
+.footer .footer__info .contact-footer {
   padding: 0;
   margin: 0;
 }
-.footer__e-t {
+
+.contact-footer__poc {
   color: rgba(255, 255, 255, 0.6);
   font-family: "roboto";
   font-weight: 400;
@@ -444,7 +445,8 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer__e-t:hover {
+
+.contact-footer__poc:hover {
   color: #2196F3;
 }
 
@@ -453,21 +455,14 @@ header {
   margin-left: 70px;
 }
 
-.footer__socialmedia {
+.socialmedia {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin-top: 20px;
 }
 
-.footer__smsvg {
-  width: 20px;
-  height: 20px;
-  border-width: 44px;
-  fill: #ffffff;
-}
-
-.footer__smli {
+.socialmedia__li {
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
@@ -478,7 +473,15 @@ header {
   margin-right: 10px;
   margin-left: 0;
 }
-.footer__smli:hover {
+
+.footer__smsvg {
+  width: 20px;
+  height: 20px;
+  border-width: 44px;
+  fill: #ffffff;
+}
+
+.socialmedia__li:hover {
   background-color: #2196F3;
   cursor: pointer;
 }
@@ -554,11 +557,12 @@ header {
   height: 24px;
 }
 
-.last {
+.regular {
   padding-top: 59px;
   padding-bottom: 151px;
 }
-.last__ul {
+
+.last {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
@@ -727,15 +731,16 @@ header {
   margin: 0;
 }
 
-.service {
+.technology {
   justify-content: center;
   padding-bottom: 94px;
 }
-.service__title {
+.technology__title {
   margin-top: 0;
   margin-bottom: 55px;
 }
-.service__ul {
+
+.service {
   margin: 0;
   display: flex;
   padding: 0;
@@ -776,11 +781,17 @@ header {
   z-index: 2;
 }
 
-.team {
+.presentation {
   background-color: #f5f4fa;
 }
-.team__mates {
+.presentation__mates {
   padding-bottom: 50px;
+}
+
+.team {
+  display: flex;
+  gap: 32px;
+  padding: 0;
 }
 .team__social-media {
   display: flex;
@@ -804,11 +815,6 @@ header {
 .team__icons:hover {
   background-color: #2196F3;
   cursor: pointer;
-}
-.team__presentation {
-  display: flex;
-  gap: 32px;
-  padding: 0;
 }
 .team__card {
   background-color: #ffffff;
@@ -835,7 +841,6 @@ header {
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
-
 .team__icons:hover .team__svg {
   fill: #ffffff;
   cursor: pointer;
@@ -845,7 +850,7 @@ header {
   fill: #AFB1B8;
 }
 
-.values__img {
+.values {
   display: flex;
   gap: 30px;
   margin-bottom: 30px;
@@ -882,4 +887,7 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.values_text {
+  margin-top: 30px;
 }/*# sourceMappingURL=main.min.css.map */
