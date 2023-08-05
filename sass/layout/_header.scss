@@ -25,71 +25,52 @@
     display: flex;
     flex-direction: row;
     padding: 0;
+    &__top {
+        display: flex;
+      }
   }
   
-  .header__top {
-    display: flex;
-  }
   .nav {
     display: flex;
     gap: 50px;
     padding-left: 0;
-  }
-  
-  .nav__click{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transform: translateY(0%);
-    &.nav__click:hover .nav__animation{
-        background-color: $maincolor;
-        transform: translateY(0%);
-        transition: transform 2s;   
-      }       
-  }
-  
-  .nav__animation{
-    align-items: center;
-    bottom: 1px;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-    transform: scaleY(3);
-  }
-  
-  
-  
-  .contacts__icon-mail {
-    width: 16px;
-    height: 12px;
-  }
-  
-  .contacts__icon-tel {
-    width: 10px;
-    height: 16px;
-  }
-  
-  
-  
-  .nav {
     font-family: $mainfont;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
     color: #212121;
-    
+    &__click:hover &__link{
+        color: $maincolor;
+    }
+    &__click:hover &__animation{
+        color: $maincolor;
+    }
+    &__click:hover &__animation{
+        background-color: $maincolor;
+        transform: translateY(0%);
+        transition: transform 2s;   
+      }  
+    &__click{
+        padding-top: 32px;
+    padding-bottom: 32px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0%);
+    }
+    &__animation{
+        align-items: center;
+        bottom: 1px;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        transform: scaleY(3);
+    }
   }
   
   
-  .nav .list:focus {
-    color: $maincolor;
-    
-  }
-
   .contacts {
     display: flex;
     margin-left: 306px;
@@ -101,8 +82,22 @@
         display: flex;
         flex-direction: row;
     }
-
+    &__icon-mail{
+    width: 16px;
+    height: 12px;
+    }
+    &__icon-tel {
+        width: 10px;
+        height: 16px;
+      }
   }
+ 
+  .nav .list:focus {
+    color: $maincolor;
+    
+  }
+
+  
 
   .contacts__link:hover .contacts__icon-mail, .contacts__link:hover .contacts__icon-tel{
     fill: $maincolor;

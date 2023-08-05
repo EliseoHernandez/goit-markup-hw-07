@@ -296,7 +296,6 @@ header {
   flex-direction: row;
   padding: 0;
 }
-
 .header__top {
   display: flex;
 }
@@ -305,8 +304,24 @@ header {
   display: flex;
   gap: 50px;
   padding-left: 0;
+  font-family: "roboto";
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: #212121;
 }
-
+.nav__click:hover .nav__link {
+  color: #2196F3;
+}
+.nav__click:hover .nav__animation {
+  color: #2196F3;
+}
+.nav__click:hover .nav__animation {
+  background-color: #2196F3;
+  transform: translateY(0%);
+  transition: transform 2s;
+}
 .nav__click {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -315,12 +330,6 @@ header {
   overflow: hidden;
   transform: translateY(0%);
 }
-.nav__click.nav__click:hover .nav__animation {
-  background-color: #2196F3;
-  transform: translateY(0%);
-  transition: transform 2s;
-}
-
 .nav__animation {
   align-items: center;
   bottom: 1px;
@@ -329,29 +338,6 @@ header {
   width: 100%;
   border-radius: 10px;
   transform: scaleY(3);
-}
-
-.contacts__icon-mail {
-  width: 16px;
-  height: 12px;
-}
-
-.contacts__icon-tel {
-  width: 10px;
-  height: 16px;
-}
-
-.nav {
-  font-family: "roboto";
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  color: #212121;
-}
-
-.nav .list:focus {
-  color: #2196F3;
 }
 
 .contacts {
@@ -365,6 +351,18 @@ header {
 .contacts__contact-link {
   display: flex;
   flex-direction: row;
+}
+.contacts__icon-mail {
+  width: 16px;
+  height: 12px;
+}
+.contacts__icon-tel {
+  width: 10px;
+  height: 16px;
+}
+
+.nav .list:focus {
+  color: #2196F3;
 }
 
 .contacts__link:hover .contacts__icon-mail, .contacts__link:hover .contacts__icon-tel {
